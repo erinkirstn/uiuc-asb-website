@@ -24,12 +24,16 @@ const {
   class: className = "mx-auto w-full max-w-full rounded-lg"
 } = Astro.props;
 
-const imageImport = await import(src);
+
+// const imageImport = await import(src);
+
+const imagePath = src.replace('/src/', '../');
+const image = (await import(imagePath)).default;
 
 ---
 
 <Picture
-  src={imageImport.default}
+  src={image}
   alt="description"
   widths={widths}
   sizes={sizes}

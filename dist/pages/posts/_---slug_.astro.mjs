@@ -3,7 +3,7 @@ import { b as createAstro, c as createComponent, m as maybeRenderHead, d as addA
 import 'kleur/colors';
 import { g as getCollection } from '../../chunks/_astro_content_Wzi96bNS.mjs';
 import { $ as $$BaseLayout } from '../../chunks/BaseLayout_-JKq6QpK.mjs';
-import { $ as $$OptimizedPicture, a as $$FormattedDate } from '../../chunks/FormattedDate_CXWWVXEU.mjs';
+import { $ as $$OptimizedPicture, a as $$FormattedDate } from '../../chunks/FormattedDate_CkpOG7Gt.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const $$Astro$1 = createAstro("https://verse-astro.vercel.app");
