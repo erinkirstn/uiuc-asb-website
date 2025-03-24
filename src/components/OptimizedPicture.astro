@@ -25,14 +25,13 @@ const {
   class: className = "mx-auto w-full max-w-full rounded-lg"
 } = Astro.props;
 ---
-s
+
 <Picture
-  src={localImage.src}
+  src={localImage}
   alt="description"
   widths={widths}
   sizes={sizes}
   formats={formats}
   fallbackFormat={fallbackFormat}
   class={className}
-  inferSize={true}
 />
