@@ -1,5 +1,5 @@
 ---
-title: Alternative Seasonal Breaks at UIUC
+title: Alternative Spring Break at UIUC
 slug: about-asb
 description: "🌲 Student-run program of the University YMCA <br><br> 🚐 Volunteer across the US during spring break <br><br> 🛠️ Make a meaningful impact on social issues <br>"
 category:
