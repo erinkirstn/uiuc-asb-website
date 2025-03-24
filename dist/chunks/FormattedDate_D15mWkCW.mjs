@@ -2,7 +2,7 @@ import { b as createAstro, c as createComponent, r as renderComponent, a as rend
 import 'kleur/colors';
 import '@astrojs/internal-helpers/path';
 import '@astrojs/internal-helpers/remote';
-import { $ as $$Picture } from './_astro_assets_BpzwGEll.mjs';
+import { $ as $$Picture } from './_astro_assets_goMRRygA.mjs';
 import 'clsx';
 import dayjs from 'dayjs';
 import utc from 'dayjs/plugin/utc.js';
@@ -23,8 +23,8 @@ const $$OptimizedPicture = createComponent(async ($$result, $$props, $$slots) =>
     fallbackFormat = "avif",
     class: className = "mx-auto w-full max-w-full rounded-lg"
   } = Astro2.props;
-  const imagePath = src.replace("/src/", "../");
-  const image = (await import(imagePath)).default;
+  console.log(src);
+  const image = (await import(src)).default;
   return renderTemplate`${renderComponent($$result, "Picture", $$Picture, { "src": image, "alt": "description", "widths": widths, "sizes": sizes, "formats": formats, "fallbackFormat": fallbackFormat, "class": className })}`;
 }, "/Users/erinkirsten/Desktop/asb-website/src/components/OptimizedPicture.astro", void 0);
 

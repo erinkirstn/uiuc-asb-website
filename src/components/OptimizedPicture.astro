@@ -26,9 +26,9 @@ const {
 
 
 // const imageImport = await import(src);
-
-const imagePath = src.replace('/src/', '../');
-const image = (await import(imagePath)).default;
+console.log(src)
+// const imagePath = src.replace('/', '../');
+const image = (await import(src)).default;
 
 ---
 

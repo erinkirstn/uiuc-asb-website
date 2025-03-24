@@ -1,9 +1,9 @@
 /* empty css                                     */
 import { b as createAstro, c as createComponent, m as maybeRenderHead, d as addAttribute, r as renderComponent, a as renderTemplate } from '../../chunks/astro/server_BhOmpjMx.mjs';
 import 'kleur/colors';
-import { g as getCollection } from '../../chunks/_astro_content_Wzi96bNS.mjs';
+import { g as getCollection } from '../../chunks/_astro_content_BMMBXVA5.mjs';
 import { $ as $$BaseLayout } from '../../chunks/BaseLayout_-JKq6QpK.mjs';
-import { $ as $$OptimizedPicture, a as $$FormattedDate } from '../../chunks/FormattedDate_CkpOG7Gt.mjs';
+import { $ as $$OptimizedPicture, a as $$FormattedDate } from '../../chunks/FormattedDate_D15mWkCW.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const $$Astro$1 = createAstro("https://verse-astro.vercel.app");
