@@ -1,6 +1,5 @@
 ---
 import { Picture } from "astro:assets";
-import localImage from '/src/images/shawnee-group.jpg';
 
 interface Props {
   src: string;
@@ -24,10 +23,13 @@ const {
   fallbackFormat = "avif",
   class: className = "mx-auto w-full max-w-full rounded-lg"
 } = Astro.props;
+
+const imageImport = await import(src);
+
 ---
 
 <Picture
-  src={localImage}
+  src={imageImport.default}
   alt="description"
   widths={widths}
   sizes={sizes}
