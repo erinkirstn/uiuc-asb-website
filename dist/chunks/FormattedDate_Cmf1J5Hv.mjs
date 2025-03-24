@@ -23,9 +23,7 @@ const $$OptimizedPicture = createComponent(async ($$result, $$props, $$slots) =>
     fallbackFormat = "avif",
     class: className = "mx-auto w-full max-w-full rounded-lg"
   } = Astro2.props;
-  console.log(src);
-  const image = (await import(src)).default;
-  return renderTemplate`${renderComponent($$result, "Picture", $$Picture, { "src": image, "alt": "description", "widths": widths, "sizes": sizes, "formats": formats, "fallbackFormat": fallbackFormat, "class": className })}`;
+  return renderTemplate`${renderComponent($$result, "Picture", $$Picture, { "src": src, "alt": "description", "widths": widths, "sizes": sizes, "formats": formats, "fallbackFormat": fallbackFormat, "class": className })}`;
 }, "/Users/erinkirsten/Desktop/asb-website/src/components/OptimizedPicture.astro", void 0);
 
 const $$Astro = createAstro("https://verse-astro.vercel.app");

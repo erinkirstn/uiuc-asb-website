@@ -28,6 +28,9 @@ function truncateUTF8String(str: string, maxBytes: number) {
 }
 
 const truncatedDescription = truncateUTF8String(post.data.description, 150);
+
+const image = (await import(post.data.cover)).default;
+
 ---
 
 <div
@@ -35,7 +38,7 @@ const truncatedDescription = truncateUTF8String(post.data.description, 150);
 >
   <a href={`/posts/${post.slug}/`} class="block md:flex md:flex-1">
     <div class="md:w-1/2">
-      <OptimizedCover src={post.data.cover} alt={post.data.coverAlt} />
+      <OptimizedCover src={image} alt={post.data.coverAlt} />
     </div>
     <div
       class="absolute bottom-0 end-0 start-0 bg-gradient-to-t from-black p-4 md:relative md:flex md:w-1/2 md:flex-col md:justify-start md:bg-transparent md:p-5"

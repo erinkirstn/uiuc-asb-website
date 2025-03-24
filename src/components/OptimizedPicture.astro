@@ -2,7 +2,7 @@
 import { Picture } from "astro:assets";
 
 interface Props {
-  src: string;
+  src: ImageMetadata;
   alt: string;
   widths?: number[];
   sizes?: string;
@@ -26,14 +26,13 @@ const {
 
 
 // const imageImport = await import(src);
-console.log(src)
-// const imagePath = src.replace('/', '../');
-const image = (await import(src)).default;
+// console.log(src)
+//const image = (await import(src)).default;
 
 ---
 
 <Picture
-  src={image}
+  src={src}
   alt="description"
   widths={widths}
   sizes={sizes}
