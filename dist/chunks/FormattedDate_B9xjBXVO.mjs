@@ -2,7 +2,7 @@ import { b as createAstro, c as createComponent, r as renderComponent, a as rend
 import 'kleur/colors';
 import '@astrojs/internal-helpers/path';
 import '@astrojs/internal-helpers/remote';
-import { $ as $$Picture } from './_astro_assets_goMRRygA.mjs';
+import { $ as $$Picture } from './_astro_assets_De3XLSF-.mjs';
 import 'clsx';
 import dayjs from 'dayjs';
 import utc from 'dayjs/plugin/utc.js';

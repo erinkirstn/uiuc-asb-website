@@ -1,9 +1,9 @@
 /* empty css                                     */
 import { b as createAstro, c as createComponent, m as maybeRenderHead, d as addAttribute, r as renderComponent, a as renderTemplate } from '../../chunks/astro/server_BhOmpjMx.mjs';
 import 'kleur/colors';
-import { g as getCollection } from '../../chunks/_astro_content_BMMBXVA5.mjs';
+import { g as getCollection } from '../../chunks/_astro_content_-axNSCY8.mjs';
 import { $ as $$BaseLayout } from '../../chunks/BaseLayout_-JKq6QpK.mjs';
-import { $ as $$OptimizedPicture, a as $$FormattedDate } from '../../chunks/FormattedDate_Cmf1J5Hv.mjs';
+import { $ as $$OptimizedPicture, a as $$FormattedDate } from '../../chunks/FormattedDate_B9xjBXVO.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const $$Astro$1 = createAstro("https://verse-astro.vercel.app");
@@ -36,7 +36,7 @@ const $$ = createComponent(async ($$result, $$props, $$slots) => {
   Astro2.self = $$;
   const post = Astro2.props;
   const { Content } = await post.render();
-  const imagePath = post.data.cover.replace("../", "../../");
+  const imagePath = post.data.cover.replace("../src/../", "../src/../../");
   const image = (await import(imagePath)).default;
   return renderTemplate`${renderComponent($$result, "BaseLayout", $$BaseLayout, { "title": post.data.title, "description": post.data.description }, { "default": async ($$result2) => renderTemplate` ${maybeRenderHead()}<main> <article class="prose mx-auto dark:prose-invert"> <div class="prose-h1 text-center"> <h1>${post.data.title}</h1> </div> <div> ${post.data.cover && renderTemplate`${renderComponent($$result2, "OptimizedCover", $$OptimizedPicture, { "src": image, "alt": post.data.coverAlt })}`} </div> <div> ${renderComponent($$result2, "Content", Content, {})} </div> <div class="prose-a:no-underline"> ${post.data.tags.map((tag) => renderTemplate`<span class="mb-2 mr-2 inline-block rounded-full bg-neutral-200 px-3 py-1 text-sm hover:bg-neutral-500 dark:bg-neutral-600"> <a${addAttribute(`/tags/${tag}/1/`, "href")}>${tag}</a> </span>`)} </div> <div class="flex justify-between"> <small>Publish on ${renderComponent($$result2, "FormattedDate", $$FormattedDate, { "date": post.data.pubDate })}，Update on ${renderComponent($$result2, "FormattedDate", $$FormattedDate, { "date": (/* @__PURE__ */ new Date()).toISOString() })}</small> </div> </article> <div class="mt-4"> ${renderComponent($$result2, "RelatedPostsCard", $$RelatedPostsCard, { "currentCategory": post.data.category[0], "currentSlug": post.slug })} </div> </main> ` })}`;
 }, "/Users/erinkirsten/Desktop/asb-website/src/pages/posts/[...slug].astro", void 0);

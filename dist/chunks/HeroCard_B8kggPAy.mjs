@@ -1,6 +1,6 @@
 import { b as createAstro, c as createComponent, m as maybeRenderHead, d as addAttribute, r as renderComponent, u as unescapeHTML, a as renderTemplate } from './astro/server_BhOmpjMx.mjs';
 import 'kleur/colors';
-import { $ as $$OptimizedPicture, a as $$FormattedDate } from './FormattedDate_Cmf1J5Hv.mjs';
+import { $ as $$OptimizedPicture, a as $$FormattedDate } from './FormattedDate_B9xjBXVO.mjs';
 
 const $$Astro = createAstro("https://verse-astro.vercel.app");
 const $$HeroCard = createComponent(async ($$result, $$props, $$slots) => {

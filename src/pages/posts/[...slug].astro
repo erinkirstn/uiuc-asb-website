@@ -16,7 +16,8 @@ export async function getStaticPaths() {
 const post = Astro.props;
 const { Content } = await post.render();
 
-const imagePath = (post.data.cover).replace('../', '../../');
+const imagePath = (post.data.cover).replace('../src/../', '../src/../../');
+
 const image = (await import(imagePath)).default;
 
 ---
