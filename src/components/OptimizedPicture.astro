@@ -13,6 +13,11 @@ interface Props {
   class?: string;
 }
 
+const imageMap = {
+  macon_pic_1,
+  shawnee_pic_1,
+};
+
 const {
   src,
   alt,
@@ -26,15 +31,10 @@ const {
   class: className = "mx-auto w-full max-w-full rounded-lg"
 } = Astro.props;
 
-
-// const imageImport = await import(src);
-// console.log(src)
-//const image = (await import(src)).default;
-
 ---
 
 <Picture
-  src={macon_pic_1}
+  src={imageMap[src]}
   alt="description"
   widths={widths}
   sizes={sizes}
