@@ -46,7 +46,7 @@ const { title, description } = getTagMetadata(params.tag);
     {page.data.map((post) => <PostCard post={post} />)}
   </div>
 
-  <Pagination
+  <!-- <Pagination
     currentPage={page.currentPage}
     lastPage={page.lastPage}
     urlPrev={page.currentPage > 1
@@ -57,5 +57,5 @@ const { title, description } = getTagMetadata(params.tag);
       : null}
     basePath={`/tags/${params.tag}`}
     maxDisplayedPages={5}
-  />
+  /> -->
 </BaseLayout>

@@ -73,7 +73,7 @@ const { page } = Astro.props;
     )
   }
 
-  <Pagination
+  <!-- <Pagination
     currentPage={page.currentPage}
     lastPage={page.lastPage}
     urlPrev={page.currentPage > 1 ? `/page/${page.currentPage - 1}` : null}
@@ -82,5 +82,5 @@ const { page } = Astro.props;
       : null}
     basePath="/page"
     maxDisplayedPages={5}
-  />
+  /> -->
 </BaseLayout>
