@@ -16,9 +16,9 @@ export async function getStaticPaths() {
 const post = Astro.props;
 const { Content } = await post.render();
 
-const imagePath = (post.data.cover).replace('../src/../', '../src/../../');
+// const imagePath = (post.data.cover).replace('../src/../', '../src/../../');
 
-const image = (await import(imagePath)).default;
+// const image = (await import(imagePath)).default;
 
 ---
 
@@ -31,7 +31,7 @@ const image = (await import(imagePath)).default;
         <div>
           {
             post.data.cover && (
-              <OptimizedCover src={image} alt={post.data.coverAlt} />
+              <OptimizedCover src={post.data.cover} alt={post.data.coverAlt} />
             )
           }
         </div>

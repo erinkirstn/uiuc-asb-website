@@ -1,8 +1,10 @@
 ---
 import { Picture } from "astro:assets";
+import macon_pic_1 from "../images/macon-2024-work.jpg";
+import shawnee_pic_1 from "../images/shawnee-group.jpg"; 
 
 interface Props {
-  src: ImageMetadata;
+  src: string;
   alt: string;
   widths?: number[];
   sizes?: string;
@@ -32,7 +34,7 @@ const {
 ---
 
 <Picture
-  src={src}
+  src={macon_pic_1}
   alt="description"
   widths={widths}
   sizes={sizes}

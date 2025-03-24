@@ -7,7 +7,7 @@ category:
 tags:
   - about
 pubDate: 2025-03-23
-cover: "../src/../images/macon-2024-work.jpg"
+cover: "macon_pic_1"
 coverAlt: "working"
 author: VV
 ---

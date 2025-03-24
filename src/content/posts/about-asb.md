@@ -7,7 +7,7 @@ category:
 tags:
   - about
 pubDate: 2025-03-23
-cover: "../src/../images/shawnee-group.jpg"
+cover: "shawnee_pic_1"
 coverAlt: "about"
 author: VV
 ---
