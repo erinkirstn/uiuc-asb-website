@@ -1,7 +1,7 @@
 ---
-title: Alternative Spring Break at UIUC
+title: UIUC Alternative Spring Break
 slug: about-asb
-description: "🌲 Student-run program of the University YMCA <br><br> 🚐 Volunteer across the US during spring break <br><br> 🛠️ Make a meaningful impact on social issues <br>"
+description: "<br>🌲 Student-run program of the University YMCA <br><br>🚐 Volunteer across the US during spring break <br><br> 🛠️ Make a meaningful impact on social issues"
 category:
   - One
 tags:
