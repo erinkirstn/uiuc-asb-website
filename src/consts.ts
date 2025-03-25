@@ -49,10 +49,16 @@ export const SocialLinks = [
     label: "Instagram",
   },
   {
+    href: "https://groupme.com/join_group/102575310/I95oBRYy",
+    icon: "groupme-logo",
+    label: "Groupme",
+  },
+  {
     href: "mailto:asb@universityymca.org",
     icon: "tabler:mail",
     label: "Mail",
   },
+  
 ];
 
 // Search Page Metadata, src/pages/search.astro
