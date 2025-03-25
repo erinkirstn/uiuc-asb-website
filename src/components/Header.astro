@@ -30,11 +30,11 @@ import asb_logo from "../images/asb-logo.png";
           SocialLinks.map((link) => (
             <button
               type="button"
-              class="bg-white text-neutral-500 hover:text-neutral-800 disabled:pointer-events-none disabled:opacity-50  dark:text-neutral-500 dark:hover:text-neutral-200 dark:bg-neutral-900 dark:hover:bg-neutral-900"
+              class="relative inline-flex bg-white text-neutral-500 hover:text-neutral-800 disabled:pointer-events-none disabled:opacity-50  dark:text-neutral-500 dark:hover:text-neutral-200 dark:bg-neutral-900 dark:hover:bg-neutral-900"
             >
               <a
                 href={link.href}
-                class=" "
+                class="absolute inset-0 z-10"
                 aria-label={link.label}
               />
               <Icon name={link.icon} class="icon-base h-6 w-6 sm:h-10 sm:w-10" />
@@ -46,7 +46,7 @@ import asb_logo from "../images/asb-logo.png";
       <div class="md:hidden">
         <button type="button" class="hs-collapse-toggle  flex justify-center items-center text-sm font-semibold rounded-xl text-neutral-500 hover:bg-neutral-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-neutral-700" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
           <Icon name="tabler:menu-2" class="hs-collapse-open:hidden flex-shrink-0 size-4 h-6 w-6 sm:h-10 sm:w-10"></Icon>
-          <Icon name="tabler:menu-order" class="hs-collapse-open:block hidden flex-shrink-0 size-4"></Icon>
+          <Icon name="tabler:menu-order" class="hs-collapse-open:block hidden flex-shrink-0 size-4 h-5 w-5 sm:h-8 sm:w-8"></Icon>
         </button>
       </div>
       
