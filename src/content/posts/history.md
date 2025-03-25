@@ -1,5 +1,5 @@
 ---
-title: History
+title: Our History
 slug: our-history
 description: Alternative Seasonal Breaks is a 100% student run, non-profit volunteer organization of the University of Illinois Urbana-Champaign and the University YMCA.
 category:
